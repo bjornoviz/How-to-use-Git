@@ -1,0 +1,26 @@
+// Creates a local repository with no server or deamon running
+// in the background.
+git init project1
+
+// .git is the control structure. It is a hidden folder, but
+// looking in to it can give a good idea of how everything
+// works. In Subversion there is only one constrol structure
+// but in git there is one for every project.
+tree .git | more
+
+// Typing 'git status' tells you the branch and commit status.
+git status
+
+// Clear content of file
+cat /dev/null > learngit.txt
+
+// Copy content from one file to another
+cat /var/www/git/test/test.txt >> learngit.txt
+
+// Add file to version control
+// You might run 'git status' and see 'Untracked files:'
+// displaying files that are not yet under version control.
+// Files git have not seen before. By typing 'git add learngit.txt' you add learngit.txt to version control.
+git add learngit.txt
+
+
