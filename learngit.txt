@@ -20,7 +20,13 @@ cat /var/www/git/test/test.txt >> learngit.txt
 // Add file to version control
 // You might run 'git status' and see 'Untracked files:'
 // displaying files that are not yet under version control.
-// Files git have not seen before. By typing 'git add learngit.txt' you add learngit.txt to version control.
+// Files git have not seen before. By typing 'git add
+// learngit.txt' you send a suggestion to add this file to
+// version control. It does not make it a permenant record of
+// that version yet.
 git add learngit.txt
+
+// Commit your added files with a commit message.
+git commit -m "Commit message"
 
 
