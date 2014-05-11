@@ -35,3 +35,25 @@ git gui
 // Push an existing repository from the command line
 git remote add origin https://github.com/bjornoviz/How-to-use-Git.git
 git push -u origin master
+
+/**
+ * Participate on other projects
+ **/
+
+// First fork it on GitHub, then type in the following to get a
+// local copy
+git clone https://github.com/bjornoviz/How-to-use-Git.git
+
+// Creating a new branch
+git branch maylearning
+// Toggeling to the new branch
+git checkout maylearning
+
+// How to show branch in terminal:
+// In .bashrc add this:
+parse_git_branch() {
+    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/(\1)/'
+}
+PS1="${debian_chroot:+($debian_chroot)}\u@\h:\w\ $(parse_git_branch) $"
+
+
