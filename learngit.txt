@@ -31,3 +31,7 @@ git commit -m "Commit message"
 
 // Git Gui is a GUI for Git. Simply type 'sudo apt-get install git-gui' to install it and 'git gui' to run it.
 git gui
+
+// Push an existing repository from the command line
+git remote add origin https://github.com/bjornoviz/How-to-use-Git.git
+git push -u origin master
